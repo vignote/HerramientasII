@@ -6,3 +6,21 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 $uoc-corporate: #000078;
 $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+/* COLORS */
+$bg-color: #191923;
+$body-color: #313135;
+$page-color: #5d5d5f;
+$header-color: #26262a;
+$aside-color: #26262a;
+$main-color: #26262a;
+$card-color: #2c2c38;
+$font-color: white;
+$font-secondary-color: #898688;
+$highlight-color: #ffc107;
+
+/* DIMENSIONS */
+$small-device: 576px;
+$medium-device: 768px;
+$large-device: 992px;
+$extra-large-device: 1200px;

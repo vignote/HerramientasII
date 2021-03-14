@@ -1,21 +1,350 @@
-body {
-  margin: 0;
-  padding: 30px;
+html {
+  background-color: $bg-color;
+}
+
+.page {
+  
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  color: $font-color;
+
+  @media screen and (min-width: $medium-device) {
+    display: grid;
+    grid-template-areas: "aside header"
+                         "aside main"
+                         "footer footer";
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 30px;
+  }
+
 }
 
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  width: 300px;
-  height: auto;
+.header {
+  position: sticky;
+  top: 0;
+  grid-area: header;
+  background-color: $header-color;
+  margin: 0 10px;
+  border-radius: 10px;
+  
+  @media screen and (min-width: $medium-device) {
+    text-align: center;
+  }
+  
+  &__hamburguer-menu {
+    
+    @media screen and (min-width: $medium-device) {
+      display: none;
+    }
+
+    &:active {
+      cursor: pointer;
+      color: $highlight-color;
+    }
+  }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
+.main-nav {
+  display: none;
+  text-align: center;
+
+  @media screen and (min-width: $medium-device) {
+    display: block;
+  }
+
+  &__item {
+    display: inline-block;
+    border: 1px solid $font-color;
+    text-align: center;
+
+    &:hover{
+      background-color: $bg-color;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width:10rem;
+    line-height: 2.5rem;
+  
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $highlight-color;
+    }
+  }
+
+
+}
+
+
+.aside{
+  background-color: $aside-color;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  @media screen and (min-width: $medium-device) {
+    grid-area: aside;
+    width: 250px;
+    
+  }
+}
+
+.profile {
+
+  @media screen and (min-width: $medium-device) {
+    position: sticky;
+    top: 20px;
+  }
+
+  &__img {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $highlight-color;
+  }
+
+  &__social-media {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__social-media-item {
+    padding: 5px;
+    color: $font-color;
+
+    &:hover{
+      color: $highlight-color;
+    }
+  }
+
+}
+
+.main {
+  grid-area: main;
+  background-color: $main-color;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+.section {
+  border: 1px solid $font-color;
+  padding: 10px;
+  margin-top: 30px;
+  scroll-margin-top: 6em;
+
+  &__description{
+
+    @media screen and (min-width: $medium-device) {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      column-gap: 10px;        
+    }
+  } 
+
+  &__img {
+    margin: 0 auto; 
+  }
+
+  &__picture {
+    max-width: 100%;
+  }
+
+  &__title {
+    font-weight: bold;
+    text-decoration: underline;
+    color: $highlight-color;
+    font-size: 1.3rem;
+    margin: 10px 0px;
+  }
+
+
+
+}
+
+.subsection {
+  margin-top: 50px;
+  
+  &__title {
+    font-weight: bold;
+    text-decoration: underline;
+    color: $font-color;
+    font-size: 1.2rem;
+    margin: 10px 15px;
+  }
+}
+
+.cards {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.card{
+  border: 1px solid $highlight-color;
+  padding: 15px;
+  box-shadow: 0px 3px 13px 1px rgba(250,250,0,.12);
+
+  &__title {
+    color: $highlight-color;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 15px;
+    vertical-align: middle;
+  }
+
+  &__img {
+    text-align: right;
+    color: $highlight-color;  
+    margin-bottom: 10px;
+    }
+  
+  &__picture {
+    max-width: 24px;
+    margin: 10px;
+  }
+
+  &__description {
+    font-style: italic;
+    min-height: 150px;
+    color: gray;
+  }
+
+  &__progress {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+}
+
+
+.progress {
+  &__text{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bar {
+    height: 3px;
+    background-color: $font-secondary-color;
+
+    @for $i from 1 through 100 {
+      &--#{$i} {
+        width: #{$i*1%}; 
+        height: 3px;
+        background-color: $highlight-color;
+      }
+    }
+  }
+
+}
+
+.timeline {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.degree {
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+  grid-auto-rows: 100px;
+  
+  &__line {
+    position: relative;
+    background-color: $font-color;
+  }
+
+  &__bullet {
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: $font-secondary-color;
+  }
+
+  &__name {
+    justify-self: right;
+    margin-right: 15px;
+  }
+
+  &__date {
+    margin-left: 15px;
+  }
+
+}
+
+.form {
+  @media screen and (min-width: $medium-device) {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  &__group {
+    margin-top: 10px;
+  }
+  
+  &__item {
+    height: 1.5rem;
+  }
+  
+  &__item--single{
+    width: 100%;
+    display: block;
+
+    @media screen and (min-width: $medium-device) {
+      display: unset;
+      width: 200px;
+      margin-right: 10px;
+  
+    }
+  }
+  
+  &__item--double{
+    width: 100%;
+    
+    @media screen and (min-width: $medium-device) {
+      width: 450px;
+    }
+  }
+}  
+
+.button {
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  color: $font-color;
+  font-weight: bold;
+
+  &--green {
+    background-color: green;
+  }
+}
+
+.fab,
+.far,
+.fas {
+  margin: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
 }

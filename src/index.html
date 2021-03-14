@@ -5,18 +5,440 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Curriculum</title>
   </head>
-  <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC! <li class="fas fa-university"></li></h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <p>Student From Granada</p>
+  <body class="page">
+
+    <header class="header">
+      <div class="header__hamburguer-menu">
+        <i class="fa fa-bars fa-2x" ></i>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          
+          <li class="main-nav__item"><a class="main-nav__link" href="#about" >Sobre Mi</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#knowledge" >Conocimientos</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#titles" >Titulaciones</a></li> 
+          <li class="main-nav__item"><a class="main-nav__link" href="#contact" >Contacto</a></li>
+
+        </ul>
+
+      </nav>
+    </header>
+
+
+    <aside class="aside">
+      <div class="profile">
+        <img class="profile__img" src="assets/images/foto_perfil2.jpg" alt="foto perfil">
+        <div class="profile__name">Alejandro Rodriguez Vignote</div>
+            <div>
+            Desarrollador Web
+          </div>
+          
+            <p>C/Ocho de Marzon Nº 116 <i class="fas fa-search-location"></i>
+              <br>Armilla (Granada)
+            </p>
+            <p>661204228<i class="fas fa-phone"></i></p>
+            <p>vignote@uoc.edu<i class="fas fa-envelope"></i></p>
+          
+          <p class="profile__social-media">
+            <a class="profile__social-media-item" href="https://es.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a class="profile__social-media-item" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="profile__social-media-item" href="#"><i class="fab fa-facebook"></i></a>
+            <a class="profile__social-media-item" href="#"><i class="fab fa-github"></i></a>
+          </p>
+        </div>
+
+
+
+      </div>
+
+    </aside>
+
+
+    <main class="main">
+
+      <section class="section" id="about">
+        <div class="section__title section__title--primary">Sobre Mi</div>
+        <div class="section__description">
+          <div class="section__text">
+            <p>
+              Mi nombre es Alejandro y aunque ya hace bastantes años terminé la carrera de Ingeniería Informática, no he dejado de formarme no solo en el mundo de la tecnología, sino que además he ampliado mi grado de conocimiento a otras áreas. Todo esto ha hecho tener una visión amplia desde el munto de vista de las empresas y la gestión del personal en las mismas.
+            </p>
+            <p>
+              Tengo amplia experiencia en Sistemas y Administración de Servidores, así como también en los últimos años he estado formandome en el Desarrollo de aplicaciones Móviles y Desarrollo de Aplicaciones Web.
+            </p>
+          </div>
+          <div class="section__img"><img class="section__picture" src="assets/images/foto_perfil_completa.jpg"></div>
+        </div>
+      </section>
+      
+            
+      <section class="section" id="knowledge">
+        
+        <div class="section__title">Conocimientos</div>
+
+        <div class="subsection">
+          <div class="subsection__title">Desarrollo de Aplicaciones Móviles<i class="fas fa-mobile-alt fa-2x"></i></div>
+          <div class="cards">
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-hand-point-up fa-2x"></i></div>
+              <div class="card__title">Desarrollo de Productos Interactivos</div>
+              <div class="card__description">Diseño centrado en el usuario para desarrollar productos interactivos multidispositivo y ecosistemas de interacción</div>
+              <div class="card__progress progress">
+                  <div class="progress__text">
+                    <span>Nivel:</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress__bar">
+                    <div class="progress__bar--95"></div>
+                  </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-mobile-alt fa-2x"></i></div>
+              <div class="card__title">Desarrollo de Aplicaciones para Dispositivos Android</div>
+              <div class="card__description">Herramientas y técnicas para desarrollar aplicaciones móviles (apps) para dispositivos Android</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--75"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fab fa-apple fa-2x"></i></div>
+              <div class="card__title">Desarrollo de Aplicaciones para dispositivos iOS</div>
+              <div class="card__description">Herramientas y técnicas para desarrollar aplicaciones móviles (apps) para dispositivos con sistema iOS</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>65%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--65"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><img class="card__picture" src="assets/images/firebase.png" alt="Firebase logo"></div>
+              <div class="card__title">Firebase</div>
+              <div class="card__description">Firebase es un sistema proporcionado por Google considerado como un SaaS (Software como Servicio) que nos permite implementar la parte de Backend de nuestras aplicaciones móviles o aplicaciones Web. </div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--75"></div>
+                </div>
+              </div>
+            </div>
+  
+  
+          </div>
+        </div>
+
+        <div class="subsection">
+          <div class="subsection__title">Desarrollo de Aplicaciones Web <i class="fab fa-chrome fa-2x"></i></div>
+          <div class="cards">
+  
+            <div class="card">
+              <div class="card__img"><i class="fab fa-html5 fa-2x"></i></div>
+              <div class="card__title">HTML y CSS</div>
+              <div class="card__description">Creación de páginas estáticas usando para ello el lenguaje de etiquetas HTML y CSS como lenguaje de hoja de estilos para gestionar su aspecto</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--80"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fab fa-js-square fa-2x"></i></div>
+              <div class="card__title">Javascript</div>
+              <div class="card__description">Lenguaje de programación usado principalmente del lado del cliente, implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--85"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-code fa-2x"></i></i></div>
+              <div class="card__title">Typescript</div>
+              <div class="card__description">Lenguaje de programación libre y de código abierto desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript, que esencialmente añade tipos estáticos y objetos basados en clases</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--85"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fab fa-bootstrap fa-2x"></i></div>
+              <div class="card__title">Bootstrap</div>
+              <div class="card__description">Biblioteca multiplataforma de código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>67%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--67"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fab fa-angular fa-2x"></i></div>
+              <div class="card__title">Angular</div>
+              <div class="card__description">Framework para aplicaciones web desarrollado en TypeScript, que se utiliza para crear y mantener aplicaciones web de una sola página. </div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--90"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fab fa-laravel fa-2x"></i></div>
+              <div class="card__title">Laravel</div>
+              <div class="card__description">Framework de código abierto para desarrollar aplicaciones y servicios web con PHP 5 y PHP 7. Su filosofía es desarrollar código PHP de forma elegante y simple, evitando el "código espagueti"</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>45%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--45"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-fire fa-2x"></i></div>
+              <div class="card__title">Codeigniter</div>
+              <div class="card__description">Framework para aplicaciones web de código abierto para crear sitios web dinámicos con PHP.</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>55%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--55"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fab fa-drupal fa-2x"></i></div>
+              <div class="card__title">Drupal</div>
+              <div class="card__description">Sistema de gestión de contenidos o CMS (Content Management System) libre, modular, multipropósito y muy configurable.</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--90"></div>
+                </div>
+              </div>
+            </div>
+  
+  
+          </div> 
+        </div>
+
+        <div class="subsection">
+          <div class="subsection__title">Sistemas <i class="fas fa-server fa-2x"></i></div>
+          <div class="cards">
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-database fa-2x"></i></div>
+              <div class="card__title">Administración de Servidores</div>
+              <div class="card__description">Instalación, Configuración y Gestión de Servidores de una Empresa</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--90"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-users fa-2x"></i></div>
+              <div class="card__title">Gestión de Usuarios</div>
+              <div class="card__description">Administración de dominios y gestión de usuarios</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--90"></div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
+        <div class="subsection">
+          <div class="subsection__title">Idiomas <i class="fas fa-globe-americas fa-2x"></i></div>
+          <div class="cards">
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-people-arrows fa-2x"></i></div>
+              <div class="card__title">Español</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>100%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--100"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-people-arrows fa-2x"></i></div>
+              <div class="card__title">Inglés</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--90"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card__img"><i class="fas fa-people-arrows fa-2x"></i></div>
+              <div class="card__title">Francés</div>
+              <div class="card__progress progress">
+                <div class="progress__text">
+                  <span>Nivel:</span>
+                  <span>25%</span>
+                </div>
+                <div class="progress__bar">
+                  <div class="progress__bar--25"></div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+
+
+      </section>
+
+
+      <section class="section" id="titles">
+        <div class="section__title section__title--primary">Titulaciones<i class="fas fa-graduation-cap fa-2x"></i></div>
+        
+        <div class="timeline">
+            <div class="degree">
+              <div class="degree__name">
+                <div class="">Master Desarrollo Web</div>
+                <div class="">UOC</div>
+              </div>
+              <div class="degree__line">
+                <div class="degree__bullet"></div>
+              </div>
+              <div class="degree__date">2020 - 2021</div>
+            </div>
+            <div class="degree">
+              <div class="degree__name">
+                <div class="">Master Desarrollo Aplicaciones Móviles</div>
+                <div class="">UOC</div>
+              </div>
+              <div class="degree__line">
+                <div class="degree__bullet"></div>
+              </div>
+              <div class="degree__date">2018 - 2020</div>
+            </div>
+            <div class="degree">
+              <div class="degree__name">
+                <div class="">Nivel B2 Inglés</div>
+                <div class="">Escuela Oficial de Idiomas</div>
+              </div>
+              <div class="degree__line">
+                <div class="degree__bullet"></div>
+              </div>
+              <div class="degree__date">2014 - 2015</div>
+            </div>
+            <div class="degree">
+              <div class="degree__name">
+                <div class="">Ingeniería Informática</div>
+                <div class="">Universidad de Granada</div>
+              </div>
+              <div class="degree__line">
+                <div class="degree__bullet"></div>
+              </div>
+              <div class="degree__date">1997 - 2002</div>
+            </div>
+        </div>
+        
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section__title section__title--primary">Contacto<i class="far fa-address-card fa-2x"></i></div>
+        <form class="form">
+          <div class="form__group">
+            <input class="form__item form__item--single" type="text" name="nombre" placeholder="Nombre"> 
+            <input class="form__item form__item--single" type="email" name="email" placeholder="Correo Electronico"> 
+          </div>
+          <div class="form__group">
+            <input class="form__item form__item--double" type="text" name="subject" id="subject" placeholder="Asunto">
+          </div>
+          <div class="form__group">
+            <textarea class="form__item--double" name="message" id="message" rows="10"  placeholder="Mensaje"></textarea>
+          </div>
+          <button class="button button--green" type="button">Enviar</button>
+        </form>
+      </section>
+      
+    </main>
+ 
+    <footer class="footer">
+      <h3>Alejandro Rodríguez Vignote</h3>
+      <h4>Asignatura: Herramientas HTML y CSS II</h4>
+      <h4>Año 2021 - 2022</h4>
+    </footer>
+
+
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
+ 
