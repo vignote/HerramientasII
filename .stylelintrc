@@ -1,4 +1,14 @@
 {
   "extends": "stylelint-config-recommended-scss",
-  "rules": {}
+  "rules": {
+    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "color-no-invalid-hex": true,
+    "font-family-no-duplicate-names": true,
+    "named-grid-areas-no-invalid":  true,
+    "length-zero-no-unit": true,
+    "declaration-no-important": true,
+    "media-query-list-comma-newline-after": "never-multi-line",
+    "max-empty-lines": 5,
+    "max-line-length": 80
+  }
 }
